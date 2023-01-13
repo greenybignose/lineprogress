@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+Installation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can install this package by running the following command:
 
-## Available Scripts
+npm install lineprogress
 
-In the project directory, you can run:
+Usage
 
-### `npm start`
+You can use the Linecomp component by importing it in your React application like this:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+import Progressline from 'lineprogress';
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Here, you need to provide the correct values for the following props:
 
-### `npm test`
+    canvas: The width and height of the canvas where the chart will be rendered. It should be an array with two values, e.g. [620, 140].
+    points: The points on the X-axis where the lines will start. It should be an array of numerical values, e.g. [0, 5, 10, 33, 48, 89].
+    height: The points on the Y-axis where the lines will end. It should be an array of numerical values, e.g. [0, 8, 15, 30, 90, 220].
+    colors: The color of each line. It should be an array of strings, e.g. ['red', 'blue', 'green', 'yellow', 'purple'].
+    width: The width of each line. It should be an array of strings, e.g. ['1px', '2px', '3px', '4px', '5px'].
+    linecap: The linecap of each line. It should be an array of string, e.g. ['butt', 'round', 'round', 'round', 'butt'].
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This component will render a line chart with the provided configurations.
+Note
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    The number of elements in points, height, color, width and linecap array should be same.
+    Please make sure that you provide the correct values for canvas width and height, and other props as per the instruction provided.
